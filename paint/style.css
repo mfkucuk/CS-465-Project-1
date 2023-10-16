@@ -1,0 +1,86 @@
+div {
+  
+}
+
+.radio-group {
+    display: flex;
+    /* Set flex-direction to row to display radio buttons horizontally */
+    flex-direction: row;
+  }
+  
+  label {
+    display: flex;
+    align-items: center;
+    margin-right: 20px; /* Add spacing between radio buttons */
+    cursor: pointer;
+  }
+  
+  input[type="radio"] {
+    display: none;
+  }
+  
+  .radio-button {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #333;
+  }
+  
+  .tick {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: transparent;
+    display: none;
+  }
+  
+  /* Define background colors for each radio button */
+  .radio-button.red {
+    background-color: red;
+  }
+  
+  .radio-button.blue {
+    background-color: blue;
+  }
+  
+  .radio-button.green {
+    background-color: green;
+  }
+
+  .radio-button.orange {
+    background-color: orangered;
+  }
+
+  .radio-button.purple {
+    background-color: purple;
+  }
+
+  .radio-button.yellow {
+    background-color: yellow;
+  }
+
+  .radio-button.pink {
+    background-color: palevioletred;
+  }
+
+  .radio-button.black {
+    background-color: black;
+  }
+
+  .radio-button.erase {
+    background-color: white;
+  }
+
+  .radio-button.select {
+    background-color: white;
+  }
+  
+  input[type="radio"]:checked + .radio-button .tick {
+    display: block;
+    background-color: #333;
+  }
+  
